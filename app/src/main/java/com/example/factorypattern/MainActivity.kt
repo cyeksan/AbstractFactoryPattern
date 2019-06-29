@@ -10,9 +10,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val name = BreadFactory().getBread("Brioche")?.getBreadName()
-        val calories = BreadFactory().getBread("Brioche")?.getBreadCalories()
-
         val breadName = FactoryGenerator().getFactory("Bread")?.getBread("Roll")?.getBreadName()
         val breadCalories = FactoryGenerator().getFactory("Bread")?.getBread("Roll")?.getBreadCalories()
 
