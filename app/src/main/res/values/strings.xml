@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">FactoryPattern</string>
+
+    <string-array name="factory_list">
+        <item>Bread</item>
+        <item>Filling</item>
+        <item>Sauce</item>
+    </string-array>
+
+    <string-array name="bread_list">
+        <item>Brioche</item>
+        <item>Roll</item>
+        <item>Baguette</item>
+    </string-array>
+
+    <string-array name="filling_list">
+        <item>Cheese</item>
+        <item>Tomato</item>
+        <item>Salmon</item>
+    </string-array>
+
+    <string-array name="sauce_list">
+        <item>Ketchup</item>
+        <item>Mayonnaise</item>
+    </string-array>
 </resources>
