@@ -41,7 +41,7 @@ class BreadAdapter(
 
             for (i in 0 until factoryList.size) {
 
-                if (factoryList[i] == "Bread") {
+                if (factoryList[i] == "BREAD") {
 
                     title.text = FactoryGenerator().getFactory(factoryList[i])?.getBread(breadList[position])
                         ?.getBreadName()

@@ -2,9 +2,9 @@
     <string name="app_name">FactoryPattern</string>
 
     <string-array name="factory_list">
-        <item>Bread</item>
-        <item>Filling</item>
-        <item>Sauce</item>
+        <item>BREAD</item>
+        <item>FILLING</item>
+        <item>SAUCE</item>
     </string-array>
 
     <string-array name="bread_list">

@@ -8,6 +8,7 @@ import android.view.animation.AnimationUtils
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.adapter.SauceAdapter
 import com.example.factorypattern.R
 
 class SauceFragment(private val factoryList: MutableList<String>): Fragment() {

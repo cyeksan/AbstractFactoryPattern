@@ -1,4 +1,4 @@
-package com.example.fragment
+package com.example.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -40,7 +40,7 @@ class SauceAdapter(val factoryList: MutableList<String>,
 
             for (i in 0 until factoryList.size) {
 
-                if (factoryList[i] == "Sauce") {
+                if (factoryList[i] == "SAUCE") {
 
                     title.text = FactoryGenerator().getFactory(factoryList[i])?.getSauce(sauceList[position])
                         ?.getSauceName()

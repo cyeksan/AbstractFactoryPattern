@@ -6,9 +6,9 @@ class FactoryGenerator {
 
         return when (factoryType) {
 
-            "Bread" -> BreadFactory()
-            "Filling" -> FillingFactory()
-            "Sauce" -> SauceFactory()
+            "BREAD" -> BreadFactory()
+            "FILLING" -> FillingFactory()
+            "SAUCE" -> SauceFactory()
             else -> null
         }
     }

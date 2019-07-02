@@ -41,7 +41,7 @@ class FillingAdapter(
 
             for (i in 0 until factoryList.size) {
 
-                if (factoryList[i] == "Filling") {
+                if (factoryList[i] == "FILLING") {
 
                     title.text = FactoryGenerator().getFactory(factoryList[i])?.getFilling(fillingList[position])
                         ?.getFillingName()
