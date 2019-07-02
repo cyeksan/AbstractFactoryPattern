@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.adapter.FillingAdapter
 import com.example.factorypattern.R
 
+
 class FillingFragment(private val factoryList: MutableList<String>): Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -25,14 +26,18 @@ class FillingFragment(private val factoryList: MutableList<String>): Fragment() 
         val layoutManager =  LinearLayoutManager(context, RecyclerView.VERTICAL, false)
 
         recyclerViewFilling?.layoutManager = layoutManager
+
         val anim = AnimationUtils.loadLayoutAnimation(context,
             R.anim.layout_animation_right_to_left
         )
 
+        recyclerViewFilling?.layoutAnimation = anim
+
         val fillingList = resources.getStringArray(R.array.filling_list)
 
-        recyclerViewFilling?.layoutAnimation = anim
         recyclerViewFilling?.adapter =
             FillingAdapter(factoryList, fillingList.toMutableList(), context!!)
+
     }
+
 }

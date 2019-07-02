@@ -24,14 +24,17 @@ class SauceFragment(private val factoryList: MutableList<String>): Fragment() {
         val layoutManager =  LinearLayoutManager(context, RecyclerView.VERTICAL, false)
 
         recyclerViewSauce?.layoutManager = layoutManager
+
         val anim = AnimationUtils.loadLayoutAnimation(context,
             R.anim.layout_animation_right_to_left
         )
 
+        recyclerViewSauce?.layoutAnimation = anim
+
         val sauceList = resources.getStringArray(R.array.sauce_list)
 
-        recyclerViewSauce?.layoutAnimation = anim
         recyclerViewSauce?.adapter =
             SauceAdapter(factoryList, sauceList.toMutableList(), context!!)
     }
+
 }

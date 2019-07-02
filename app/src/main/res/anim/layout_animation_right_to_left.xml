@@ -2,6 +2,6 @@
 <layoutAnimation
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:animation="@anim/card_right_to_left_anim"
-        android:delay="15%"
+        android:delay="10%"
         android:animationOrder="normal"
 />

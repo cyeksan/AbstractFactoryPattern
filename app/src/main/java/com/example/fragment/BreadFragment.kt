@@ -25,13 +25,18 @@ class BreadFragment(private val factoryList: MutableList<String>): Fragment() {
         val layoutManager =  LinearLayoutManager(context, RecyclerView.VERTICAL, false)
 
         recyclerViewBread?.layoutManager = layoutManager
+
         val anim = AnimationUtils.loadLayoutAnimation(context,
             R.anim.layout_animation_right_to_left
         )
 
+        recyclerViewBread?.layoutAnimation = anim
+
         val breadList = resources.getStringArray(R.array.bread_list)
 
-        recyclerViewBread?.layoutAnimation = anim
         recyclerViewBread?.adapter = BreadAdapter(factoryList, breadList.toMutableList(), context!!)
+
+        userVisibleHint = true
     }
+
 }
