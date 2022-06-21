@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FactoryPattern</string>
+    <string name="app_name">Sandwich App</string>
 
     <string-array name="factory_list">
         <item>BREAD</item>

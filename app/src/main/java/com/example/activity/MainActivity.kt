@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
 
         adapter.apply {
 
-            for(i in 0 until factoryList.size) {
+            for(i in factoryList.indices) {
                 addFragment(fragmentList[i], factoryList[i])
             }
 
